@@ -3,7 +3,7 @@
 		<div class='welcome-content'>
 			<icon-logo />
 			<h1 class='welcome-content__title'>Айырмашылықты сезініңіз!</h1>
-			<h2 class='welcome-content__subtitle'>Почувствуйте разницу!</h2>
+			<h1 class='welcome-content__subtitle'>Почувствуйте разницу!</h1>
 		</div>
 		
 		<img src='@/assets/images/phone.png' alt='phone' class='welcome-image' />
@@ -24,7 +24,7 @@
 		height: 100%;
 		background-image: url('@/assets/images/background.png');
 		background-size: cover;
-		background-color: var(--clr-bg-auth);
+		background-color: var(--clr-background-auth);
 		border-radius: 0px 50px 50px 0px;
 		box-shadow: 2px 0px 9px 0px rgba(0, 0, 0, .25);
 		padding: 14.4543vh 0 0 3.90625vw;
@@ -45,6 +45,7 @@
 			}
 			&__title {
 				margin-top: 8.65385vh;
+				font-weight: 700;
 			}
 			&__subtitle {
 				font-weight: 400;

@@ -86,7 +86,7 @@
 			border-radius: 6.25px;
 			padding: 5px 10px;
 			&__text {
-				color: var(--clr-grey-3);
+				color: var(--clr-text-secondary);
 				line-height: 20px;
 				font-size: 15px;
 				font-weight: 500;

@@ -72,11 +72,11 @@
 				height: 59px;
 				border: none;
 				text-align: center;
-				color: var(--clr-grey-3);
+				color: var(--clr-text-secondary);
 				font-size: 70px;
 				font-weight: 500;
 				&::placeholder {
-					color: var(--clr-grey-3);
+					color: var(--clr-text-secondary);
 				}
 			}
 			&::after {

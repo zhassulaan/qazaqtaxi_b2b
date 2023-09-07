@@ -140,7 +140,7 @@
 			.button {
 				font-weight: 600;
 				&:last-child {
-					background: var(--clr-grey-3);
+					background: var(--clr-text-secondary);
 				}
 			}
 		}

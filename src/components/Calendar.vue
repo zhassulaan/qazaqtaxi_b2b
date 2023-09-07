@@ -208,10 +208,10 @@
 						color: var(--clr-text-primary);
 					}
 					.another {
-						color: var(--clr-grey-3);
+						color: var(--clr-text-secondary);
 					}
 					.weekend {
-						color: var(--clr-text-blue);
+						color: var(--clr-blue);
 					}
 					.active {
 						position: relative;
@@ -223,7 +223,7 @@
 							content: '';
 							width: 18px;
 							height: 18px;
-							background-color: var(--clr-text-blue);
+							background-color: var(--clr-blue);
 							border-radius: 50%;
 							transform: translate(-50%, -50%);
 							z-index: -1;

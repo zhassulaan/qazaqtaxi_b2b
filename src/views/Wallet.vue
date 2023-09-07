@@ -6,13 +6,16 @@
 			:statistics='info'
 		/>
 		<Search />
-		<Table :detail='false' :list='list_info' />
+		<Table
+			:detail='false'
+			:list='list_info'
+		/>
 	</div>
 </template>
 
 <script setup>
-	import Statistics from '@/components/Statistics.vue';
 	import Search from '@/components/Search.vue';
+	import Statistics from '@/components/Statistics.vue';
 	import Table from '@/components/Table.vue';
 
 	const info = [
