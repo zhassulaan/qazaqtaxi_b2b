@@ -24,18 +24,18 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
-	import { useRouter } from 'vue-router';
-	import Button from '@/components/Button.vue';
-	import Input from '@/components/Input.vue';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import Button from '@/components/Button.vue';
+import Input from '@/components/Input.vue';
 
-	const router = useRouter();
-	const user = ref({
-		email: '',
-		password: '',
-	});
+const router = useRouter();
+const user = ref({
+	email: '',
+	password: '',
+});
 
-	function redirect(id) {
-		router.push(`/b2b/${ id }`);
-	}
+function redirect(id) {
+	router.push(`/b2b/${ id }`);
+}
 </script>

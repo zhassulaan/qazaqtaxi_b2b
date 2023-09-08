@@ -97,101 +97,101 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
-	import Button from '@/components/Button.vue';
-	import Counter from '@/components/Counter.vue';
-	import Filter from '@/components/Filter.vue';
-	import Input from '@/components/Input.vue';
-	import Text from '@/components/Text.vue';
+import { ref } from 'vue';
+import Button from '@/components/Button.vue';
+import Counter from '@/components/Counter.vue';
+import Filter from '@/components/Filter.vue';
+import Input from '@/components/Input.vue';
+import Text from '@/components/Text.vue';
 
-	const props = defineProps({
-		info: Object,
-		archive: {
-			type: Boolean,
-			default: false,
-		},
-	});
-	const edit = ref(false);
+const props = defineProps({
+	info: Object,
+	archive: {
+		type: Boolean,
+		default: false,
+	},
+});
+const edit = ref(false);
 </script>
 
 <style scoped lang='scss'>
-	.detail {
-		margin-bottom: 32px;
-		&-box {
-			display: grid;
-			grid-gap: 5px;
-			height: 76px;
-			&__text {
-				font-size: 15px;
-			}
-			.input {
-				width: 100%;
-				height: 53px;
-				background-color: var(--clr-white);
-				color: var(--clr-black);
-			}
-			h5 {
-				font-size: 15px !important;
-			}
+.detail {
+	margin-bottom: 32px;
+	&-box {
+		display: grid;
+		grid-gap: 5px;
+		height: 76px;
+		&__text {
+			font-size: 15px;
 		}
-		&-buttons {
-			display: flex;
-			justify-content: space-between;
-			.button {
-				font-weight: 600;
-				&:last-child {
-					background: var(--clr-text-secondary);
-				}
-			}
+		.input {
+			width: 100%;
+			height: 53px;
+			background-color: var(--clr-white);
+			color: var(--clr-black);
 		}
-		&:first-child {
-			width: 21.875vw;
-			display: grid;
-			grid-gap: 27px;
-			margin-top: 5px;
-			margin-left: 3.046875vw;
-			.button {
-				height: 51px;
-				width: 10.390625vw;
-				margin-top: 3px;
-			}
+		h5 {
+			font-size: 15px !important;
 		}
-		&:nth-child(2),
-		&:last-child {
-			margin-top: 23px;
-		}
-		&:nth-child(2) {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			.filter {
-				margin-bottom: 22px;
-			}
-		}
-		&:last-child {
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-			margin-right: 5.078125vw;
-			.button {
-				height: 53px;
-				width: 12.109375vw;
-			}
-		}
-		&.archive {
-			&:first-child {
-				grid-gap: 48px;
-			}
-			&:nth-child(2) .filter {
-				margin: 0;
-			}
+	}
+	&-buttons {
+		display: flex;
+		justify-content: space-between;
+		.button {
+			font-weight: 600;
 			&:last-child {
-				justify-content: end;
-				width: 22.34375vw;
-				.button {
-					width: 10.390625vw;
-				}
+				background: var(--clr-text-secondary);
 			}
 		}
 	}
+	&:first-child {
+		width: 21.875vw;
+		display: grid;
+		grid-gap: 27px;
+		margin-top: 5px;
+		margin-left: 3.046875vw;
+		.button {
+			height: 51px;
+			width: 10.390625vw;
+			margin-top: 3px;
+		}
+	}
+	&:nth-child(2),
+	&:last-child {
+		margin-top: 23px;
+	}
+	&:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.filter {
+			margin-bottom: 22px;
+		}
+	}
+	&:last-child {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-right: 5.078125vw;
+		.button {
+			height: 53px;
+			width: 12.109375vw;
+		}
+	}
+	&.archive {
+		&:first-child {
+			grid-gap: 48px;
+		}
+		&:nth-child(2) .filter {
+			margin: 0;
+		}
+		&:last-child {
+			justify-content: end;
+			width: 22.34375vw;
+			.button {
+				width: 10.390625vw;
+			}
+		}
+	}
+}
 </style>

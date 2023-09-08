@@ -54,91 +54,91 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
-	import Analyze from '@/components/Analyze.vue';
-	import Button from '@/components/Button.vue';
-	import Controller from '@/components/Controller.vue';
-	import Input from '@/components/Input.vue';
-	import New from '@/components/New.vue';
-	import Statistics from '@/components/Statistics.vue';
-	import Search from '@/components/Search.vue';
-	import Select from '@/components/Select.vue';
-	import Table from '@/components/Table.vue';
+import { ref } from 'vue';
+import Analyze from '@/components/Analyze.vue';
+import Button from '@/components/Button.vue';
+import Controller from '@/components/Controller.vue';
+import Input from '@/components/Input.vue';
+import New from '@/components/New.vue';
+import Statistics from '@/components/Statistics.vue';
+import Search from '@/components/Search.vue';
+import Select from '@/components/Select.vue';
+import Table from '@/components/Table.vue';
 
-	const info = [
-		{
-			name: 'Кол-во поездок',
-			number: 150,
-		}, {
-			name: 'Сумма поездок',
-			number: 150,
-		}, {
-			name: 'Кол-во пользователей',
-			number: 150,
-		},
-	];
-	const list_info = [
-		{
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			total_order: 150,
-			total_cost: 150,
-		},
-	];
-	const tariffs = [
-		{
-			id: 'econom',
-			name: 'Эконом',
-		}, {
-			id: 'comfort',
-			name: 'Комфорт',
-		}, {
-			id: 'business',
-			name: 'Бизнес',
-		}, {
-			id: 'business+',
-			name: 'Бизнес +',
-		}, {
-			id: 'lady',
-			name: 'Леди',
-		},
-	];
-	const add = ref(false);
+const info = [
+	{
+		name: 'Кол-во поездок',
+		number: 150,
+	}, {
+		name: 'Сумма поездок',
+		number: 150,
+	}, {
+		name: 'Кол-во пользователей',
+		number: 150,
+	},
+];
+const list_info = [
+	{
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		total_order: 150,
+		total_cost: 150,
+	},
+];
+const tariffs = [
+	{
+		id: 'econom',
+		name: 'Эконом',
+	}, {
+		id: 'comfort',
+		name: 'Комфорт',
+	}, {
+		id: 'business',
+		name: 'Бизнес',
+	}, {
+		id: 'business+',
+		name: 'Бизнес +',
+	}, {
+		id: 'lady',
+		name: 'Леди',
+	},
+];
+const add = ref(false);
 </script>

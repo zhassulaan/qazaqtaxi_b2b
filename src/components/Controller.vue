@@ -31,41 +31,41 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
-	import { useRoute } from 'vue-router';
-	
-	const route = useRoute();
-	const prop = defineProps({
-		admin: {
-			type: Boolean,
-			default: false,
-		},
-	});
-	const active = ref(route.matched[2].path.split('/')[3]);
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const prop = defineProps({
+	admin: {
+		type: Boolean,
+		default: false,
+	},
+});
+const active = ref(route.matched[2].path.split('/')[3]);
 </script>
 
 <style scoped lang='scss'>
-	.controller {
-		display: flex;
-		gap: 1.40625vw;
-		margin-top: 10px;
-		.btn {
-			line-height: 24px;
-			color: var(--clr-black);
-			padding: 0 .625vw;
-			&.active {
-				position: relative;
-				&::after {
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					content: '';
-					width: 100%;
-					height: 1.5px;
-					background-color: var(--clr-orange);
-					text-decoration: underline;
-				}
+.controller {
+	display: flex;
+	gap: 1.40625vw;
+	margin-top: 10px;
+	.btn {
+		line-height: 24px;
+		color: var(--clr-black);
+		padding: 0 .625vw;
+		&.active {
+			position: relative;
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: '';
+				width: 100%;
+				height: 1.5px;
+				background-color: var(--clr-orange);
+				text-decoration: underline;
 			}
 		}
 	}
+}
 </style>

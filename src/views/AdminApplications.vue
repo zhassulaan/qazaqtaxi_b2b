@@ -48,75 +48,75 @@
 </template>
 
 <script setup>
-	import Button from '@/components/Button.vue';
-	import Controller from '@/components/Controller.vue';
-	import Search from '@/components/Search.vue';
-	import Table from '@/components/Table.vue';
-	import Text from '@/components/Text.vue';
+import Button from '@/components/Button.vue';
+import Controller from '@/components/Controller.vue';
+import Search from '@/components/Search.vue';
+import Table from '@/components/Table.vue';
+import Text from '@/components/Text.vue';
 
-	const list_info = [
-		{
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			addres: 'Луганского, 21а',
-			bin: '0000000000',
-			iik: '0000000000',
-			bik: '0000000000',
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			addres: 'Луганского, 21а',
-			bin: '0000000000',
-			iik: '0000000000',
-			bik: '0000000000',
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			addres: 'Луганского, 21а',
-			bin: '0000000000',
-			iik: '0000000000',
-			bik: '0000000000',
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			addres: 'Луганского, 21а',
-			bin: '0000000000',
-			iik: '0000000000',
-			bik: '0000000000',
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			addres: 'Луганского, 21а',
-			bin: '0000000000',
-			iik: '0000000000',
-			bik: '0000000000',
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			addres: 'Луганского, 21а',
-			bin: '0000000000',
-			iik: '0000000000',
-			bik: '0000000000',
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			bin: '0000000000',
-			bin: '0000000000',
-			bin: '0000000000',
-		},
-	];
+const list_info = [
+	{
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		addres: 'Луганского, 21а',
+		bin: '0000000000',
+		iik: '0000000000',
+		bik: '0000000000',
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		addres: 'Луганского, 21а',
+		bin: '0000000000',
+		iik: '0000000000',
+		bik: '0000000000',
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		addres: 'Луганского, 21а',
+		bin: '0000000000',
+		iik: '0000000000',
+		bik: '0000000000',
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		addres: 'Луганского, 21а',
+		bin: '0000000000',
+		iik: '0000000000',
+		bik: '0000000000',
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		addres: 'Луганского, 21а',
+		bin: '0000000000',
+		iik: '0000000000',
+		bik: '0000000000',
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		addres: 'Луганского, 21а',
+		bin: '0000000000',
+		iik: '0000000000',
+		bik: '0000000000',
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		bin: '0000000000',
+		bin: '0000000000',
+		bin: '0000000000',
+	},
+];
 </script>

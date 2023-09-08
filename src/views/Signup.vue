@@ -58,95 +58,95 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
-	import { useRouter } from 'vue-router';
-	import Button from '@/components/Button.vue';
-	import Input from '@/components/Input.vue';
-	import IconBack from '@/components/icons/Back.vue';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import Button from '@/components/Button.vue';
+import Input from '@/components/Input.vue';
+import IconBack from '@/components/icons/Back.vue';
 
-	const router = useRouter();
-	const active = ref(0);
-	const user = ref({
-		name: '',
-		phone: '',
-		email: '',
-		company: '',
-		addres: '',
-		bin: '',
-		iik: '',
-		bik: '',
-		password: '',
-		confirm_password: '',
-	});
-	const info = [
-		{
-			title: 'Добро пожаловать!',
-			subtitle: 'Пожалуйста зарегистрируйтесь',
-			input: [
-				{
-					type: 'number',
-					text: '+7 (7',
-					value: user.value.phone,
-				}, {
-					type: 'email',
-					text: 'Почта',
-					value: user.value.email,
-				}, {
-					type: 'text',
-					text: 'Кантактное лицо',
-					value: user.value.name,
-				},
-			],
-		}, {
-			title: 'Шаг 2/4',
-			subtitle: 'Заполните данные о компании',
-			input: [
-				{
-					type: 'text',
-					text: 'Название компании',
-					value: user.value.company,
-				}, {
-					type: 'number',
-					text: 'БИН',
-					value: user.value.bin,
-				}, {
-					type: 'text',
-					text: 'Адрес',
-					value: user.value.addres,
-				},
-			],
-		}, {
-			title: 'Шаг 3/4',
-			subtitle: 'Заполните банковские реквизиты',
-			input: [
-				{
-					type: 'number',
-					text: 'ИИК',
-					value: user.value.iik,
-				}, {
-					type: 'number',
-					text: 'БИК',
-					value: user.value.bik,
-				},
-			],
-		}, {
-			title: 'Шаг 4/4',
-			subtitle: 'Заполните данные',
-			input: [
-				{
-					type: 'password',
-					text: 'Введите пароль',
-					value: user.value.password,
-				}, {
-					type: 'password',
-					text: 'Подтвердите пароль',
-					value: user.value.confirm_password,
-				},
-			],
-		},
-	];
+const router = useRouter();
+const active = ref(0);
+const user = ref({
+	name: '',
+	phone: '',
+	email: '',
+	company: '',
+	addres: '',
+	bin: '',
+	iik: '',
+	bik: '',
+	password: '',
+	confirm_password: '',
+});
+const info = [
+	{
+		title: 'Добро пожаловать!',
+		subtitle: 'Пожалуйста зарегистрируйтесь',
+		input: [
+			{
+				type: 'number',
+				text: '+7 (7',
+				value: user.value.phone,
+			}, {
+				type: 'email',
+				text: 'Почта',
+				value: user.value.email,
+			}, {
+				type: 'text',
+				text: 'Кантактное лицо',
+				value: user.value.name,
+			},
+		],
+	}, {
+		title: 'Шаг 2/4',
+		subtitle: 'Заполните данные о компании',
+		input: [
+			{
+				type: 'text',
+				text: 'Название компании',
+				value: user.value.company,
+			}, {
+				type: 'number',
+				text: 'БИН',
+				value: user.value.bin,
+			}, {
+				type: 'text',
+				text: 'Адрес',
+				value: user.value.addres,
+			},
+		],
+	}, {
+		title: 'Шаг 3/4',
+		subtitle: 'Заполните банковские реквизиты',
+		input: [
+			{
+				type: 'number',
+				text: 'ИИК',
+				value: user.value.iik,
+			}, {
+				type: 'number',
+				text: 'БИК',
+				value: user.value.bik,
+			},
+		],
+	}, {
+		title: 'Шаг 4/4',
+		subtitle: 'Заполните данные',
+		input: [
+			{
+				type: 'password',
+				text: 'Введите пароль',
+				value: user.value.password,
+			}, {
+				type: 'password',
+				text: 'Подтвердите пароль',
+				value: user.value.confirm_password,
+			},
+		],
+	},
+];
 
-	function redirect(id) {
-		router.push(`/b2b/${ id }`);
-	}
+function redirect(id) {
+	router.push(`/b2b/${ id }`);
+}
 </script>

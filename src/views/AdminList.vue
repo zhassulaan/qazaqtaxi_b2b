@@ -69,86 +69,86 @@
 </template>
 
 <script setup>
-	import { ref } from 'vue';
-	import Admin from '@/components/Admin.vue';
-	import Button from '@/components/Button.vue';
-	import Controller from '@/components/Controller.vue';
-	import Input from '@/components/Input.vue';
-	import New from '@/components/New.vue';
-	import Search from '@/components/Search.vue';
-	import Statistics from '@/components/Statistics.vue';
-	import Table from '@/components/Table.vue';
+import { ref } from 'vue';
+import Admin from '@/components/Admin.vue';
+import Button from '@/components/Button.vue';
+import Controller from '@/components/Controller.vue';
+import Input from '@/components/Input.vue';
+import New from '@/components/New.vue';
+import Search from '@/components/Search.vue';
+import Statistics from '@/components/Statistics.vue';
+import Table from '@/components/Table.vue';
 
-	const info = [
-		{
-			name: 'Кол-во поездок',
-			number: 150,
-		}, {
-			name: 'Сумма поездок',
-			number: 150,
-		}, {
-			name: 'Кол-во компании',
-			number: 150,
-		},
-	];
-	const list_info = [
-		{
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		}, {
-			name: 'Алибеков Алибек Алибекулы',
-			phone: '+7 777 777 77 77',
-			company: 'Alibek Internation',
-			email: 'alibek@alibek.internation',
-			total_order: 150,
-			total_cost: 150,
-			balance: 50000,
-		},
-	];
-	const add = ref(false);
+const info = [
+	{
+		name: 'Кол-во поездок',
+		number: 150,
+	}, {
+		name: 'Сумма поездок',
+		number: 150,
+	}, {
+		name: 'Кол-во компании',
+		number: 150,
+	},
+];
+const list_info = [
+	{
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	}, {
+		name: 'Алибеков Алибек Алибекулы',
+		phone: '+7 777 777 77 77',
+		company: 'Alibek Internation',
+		email: 'alibek@alibek.internation',
+		total_order: 150,
+		total_cost: 150,
+		balance: 50000,
+	},
+];
+const add = ref(false);
 </script>

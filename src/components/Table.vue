@@ -36,106 +36,106 @@
 </template>
 
 <script setup>
-	import { computed, ref } from 'vue';
+import { computed, ref } from 'vue';
 
-	const props = defineProps({
-		admin: {
-			type: Boolean,
-			default: false,
-		},
-		detail: {
-			type: Boolean,
-			default: true,
-		},
-		list: Array,
-	});
-	const pre_last_text = computed(() => {
-		const item = props.list[0];
-		if (item.email) {
-			return 'Почта компании';
-		} else if (item.a) {
-			return 'Точка А';
-		} else {
-			return '';
-		}
-	});
-	const last_text = computed(() => {
-		const item = props.list[0];
-		if (item.b) {
-			return 'Точка В';
-		} else if (item.cash) {
-			return 'Потрачено, тг';
-		} else if (item.date) {
-			return 'Дата деактиваций';
-		} else {
-			return '';
-		}
-	});
-	const active = ref(0);
-
-	function handle_toggle(id) {
-		if (id !== active.value) {
-			active.value = id;
-		} else {
-			active.value = 0;
-		}
+const props = defineProps({
+	admin: {
+		type: Boolean,
+		default: false,
+	},
+	detail: {
+		type: Boolean,
+		default: true,
+	},
+	list: Array,
+});
+const pre_last_text = computed(() => {
+	const item = props.list[0];
+	if (item.email) {
+		return 'Почта компании';
+	} else if (item.a) {
+		return 'Точка А';
+	} else {
+		return '';
 	}
+});
+const last_text = computed(() => {
+	const item = props.list[0];
+	if (item.b) {
+		return 'Точка В';
+	} else if (item.cash) {
+		return 'Потрачено, тг';
+	} else if (item.date) {
+		return 'Дата деактиваций';
+	} else {
+		return '';
+	}
+});
+const active = ref(0);
+
+function handle_toggle(id) {
+	if (id !== active.value) {
+		active.value = id;
+	} else {
+		active.value = 0;
+	}
+}
 </script>
 
 <style scoped lang='scss'>
-	.table {
-		&-header,
-		&-body__row-info {
-			display: flex;
-			justify-content: space-evenly;
-			.index {
-				width: 2.5vw;
-			}
-			.name {
-				width: 19.21875vw;
-			}
-			.number {
-				width: 11.484375vw;
-			}
-			.company {
-				width: 21.015625vw;
-			}
-			.email {
-				width: 18.359375vw;
-			}
-			.date {
-				width: 16.484375vw;
-			}
+.table {
+	&-header,
+	&-body__row-info {
+		display: flex;
+		justify-content: space-evenly;
+		.index {
+			width: 2.5vw;
 		}
-		&-header {
-			padding: 20px 1.171875vw 15px;
+		.name {
+			width: 19.21875vw;
 		}
-		&-body {
-			&__row {
+		.number {
+			width: 11.484375vw;
+		}
+		.company {
+			width: 21.015625vw;
+		}
+		.email {
+			width: 18.359375vw;
+		}
+		.date {
+			width: 16.484375vw;
+		}
+	}
+	&-header {
+		padding: 20px 1.171875vw 15px;
+	}
+	&-body {
+		&__row {
+			margin-top: 15px;
+			&-info {
+				background-color: var(--clr-grey);
+				border-radius: 14px;
+				padding: 18px 1.5625vw 17px;
+			}
+			&-detail {
+				display: flex;
+				justify-content: space-between;
+				max-height: 100vh;
+				background-color: var(--clr-grey-2);
+				border-radius: 19px;
+				padding: 22px 0 22px 2.34375vw;
+				overflow: hidden;
 				margin-top: 15px;
-				&-info {
-					background-color: var(--clr-grey);
-					border-radius: 14px;
-					padding: 18px 1.5625vw 17px;
-				}
-				&-detail {
-					display: flex;
-					justify-content: space-between;
-					max-height: 100vh;
-					background-color: var(--clr-grey-2);
-					border-radius: 19px;
-					padding: 22px 0 22px 2.34375vw;
-					overflow: hidden;
-					margin-top: 15px;
-					transition: .4s;
-					&.hide {
-						max-height: 0;
-						margin-top: 0;
-						padding-top: 0;
-						padding-bottom: 0;
-					}
+				transition: .4s;
+				&.hide {
+					max-height: 0;
+					margin-top: 0;
+					padding-top: 0;
+					padding-bottom: 0;
 				}
 			}
 		}
 	}
+}
 </style>

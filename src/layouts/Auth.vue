@@ -6,12 +6,12 @@
 </template>
 
 <script setup>
-	import Welcome from '@/components/layouts/Welcome.vue';
+import Welcome from '@/components/layouts/Welcome.vue';
 </script>
 
 <style scoped>
-	div {
-		display: flex;
-		height: 100vh;
-	}
+div {
+	display: flex;
+	height: 100vh;
+}
 </style>
