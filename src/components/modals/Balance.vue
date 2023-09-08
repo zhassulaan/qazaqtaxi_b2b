@@ -2,7 +2,7 @@
 	<div class='modal'>
 		<div class='modal-background btn' @click="emit('close')"></div>
 		<div class='modal-content'>
-			<h2 class='modal-content__text'>На какую сумму хотите пополнить?</h2>
+			<h1 class='modal-content__text'>На какую сумму хотите пополнить?</h1>
 			
 			<div class='modal-content__input'>
 				<input

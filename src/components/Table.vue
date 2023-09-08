@@ -1,12 +1,12 @@
 <template>
 	<div class='table'>
 		<div class='table-header'>
-			<h5 class='index'>№</h5>
-			<h5 class='name'>{{ admin ? 'Контактное лицо' : 'ФИО' }}</h5>
-			<h5 class='number'>Номер</h5>
-			<h5 class='company'>Название компании</h5>
-			<h5 class='email'>{{ pre_last_text }}</h5>
-			<h5 class='date'>{{ last_text }}</h5>
+			<h4 class='index'>№</h4>
+			<h4 class='name'>{{ admin ? 'Контактное лицо' : 'ФИО' }}</h4>
+			<h4 class='number'>Номер</h4>
+			<h4 class='company'>Название компании</h4>
+			<h4 class='email'>{{ pre_last_text }}</h4>
+			<h4 class='date'>{{ last_text }}</h4>
 		</div>
 
 		<div class='table-body'>

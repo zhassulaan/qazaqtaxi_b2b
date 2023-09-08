@@ -2,11 +2,11 @@
 	<div class='modal'>
 		<div class='modal-background btn' @click="emit('close')"></div>
 		<div class='modal-content'>
-			<h2 class='modal-content__text'>Заполните данные карты</h2>
+			<h1 class='modal-content__text'>Заполните данные карты</h1>
 
 			<div class='form'>
 				<div class='form-box'>
-					<h3>Номер карты</h3>
+					<h2>Номер карты</h2>
 					<Input
 						type='number'
 						id='input1'
@@ -17,7 +17,7 @@
 				</div>
 
 				<div class='form-box'>
-					<h3>Срок действия карты</h3>
+					<h2>Срок действия карты</h2>
 					<Input
 						type='number'
 						id='input2'
@@ -28,7 +28,7 @@
 				</div>
 
 				<div class='form-box'>
-					<h3>CVV</h3>
+					<h2>CVV</h2>
 					<Input
 						type='number'
 						id='input3'

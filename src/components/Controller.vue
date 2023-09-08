@@ -1,31 +1,31 @@
 <template>
 	<div class='controller'>
 		<router-link :to="`/b2b/${ admin ? 'admin' : 'analytics' }/list/`">
-			<h5 class='btn'
+			<h4 class='btn'
 				:class="{ 'active': active === 'list' }"
 				@click="active = 'list'"
 			>
 				Список
-			</h5>
+			</h4>
 		</router-link>
 
 		<router-link :to="`/b2b/${ admin ? 'admin' : 'analytics' }/archive/`">
-			<h5 class='btn'
+			<h4 class='btn'
 				:class="{ 'active': active === 'archive' }"
 				@click="active = 'archive'"
 			>
 				Архив
-			</h5>
+			</h4>
 		</router-link>
 
 		<router-link :to="`/b2b/${ admin ? 'admin' : 'analytics' }/applications/`">
-			<h5 class='btn'
+			<h4 class='btn'
 				:class="{ 'active': active === 'applications' }"
 				v-if='admin'
 				@click="active = 'applications'"
 			>
 				Заявки
-			</h5>
+			</h4>
 		</router-link>
 	</div>
 </template>

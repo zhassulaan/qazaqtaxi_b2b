@@ -5,7 +5,7 @@
 			:key='tariff.id'
 		>
 			<input class='select-option__radio' type='radio' />
-			<h5 class='select-option__text'>{{ tariff.name }}</h5>
+			<h4 class='select-option__text'>{{ tariff.name }}</h4>
 		</div>
 	</div>
 </template>

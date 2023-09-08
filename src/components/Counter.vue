@@ -21,8 +21,8 @@
 			<icon-add />
 		</div>
 
-		<h4 class='counter-title'>{{ statistic.name }}</h4>
-		<h2 class='counter-text'>{{ statistic.number }}</h2>
+		<h3 class='counter-title'>{{ statistic.name }}</h3>
+		<h1 class='counter-text'>{{ statistic.number }}</h1>
 	</div>
 
 	<Balance

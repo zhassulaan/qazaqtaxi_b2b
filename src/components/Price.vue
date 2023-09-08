@@ -1,6 +1,6 @@
 <template>
 	<div class='price btn'>
-		<h3>{{ price }}</h3>
+		<h2>{{ price }}</h2>
 	</div>
 </template>
 

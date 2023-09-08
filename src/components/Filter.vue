@@ -1,6 +1,6 @@
 <template>
 	<div class='filter'>
-		<h5 class='filter-text btn'
+		<h4 class='filter-text btn'
 			v-if='start_date'
 			@click="toggle('start')"
 		>
@@ -11,8 +11,8 @@
 					+ '.' +
 				start_date.year
 			}}
-		</h5>
-		<h5 class='filter-text btn'
+		</h4>
+		<h4 class='filter-text btn'
 			v-if='end_date'
 			@click="toggle('end')"
 		>
@@ -23,7 +23,7 @@
 					+ '.' +
 				end_date.year
 			}}
-		</h5>
+		</h4>
 		<div class='filter-icon btn' @click='toggle()'>
 			<icon-calendar />
 		</div>
