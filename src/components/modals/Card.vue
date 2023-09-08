@@ -45,38 +45,38 @@
 </template>
 
 <script setup>
-	import Button from '@/components/Button.vue';
-	import Input from '@/components/Input.vue';
+import Button from '@/components/Button.vue';
+import Input from '@/components/Input.vue';
 
-	const emit = defineEmits();
+const emit = defineEmits();
 </script>
 
 <style scoped lang='scss'>
-	.modal-content {
-		.form {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			gap: 30px;
-			padding: 60px 9.453125vw 70px;
-			&-box {
-				display: grid;
-				grid-gap: 12px;
-			}
-		}
-		.input {
-			height: 62px;
-			border: 1px solid var(--clr-orange);
-			font-size: 20px;
-		}
-		#input1 {
-			width: 35.78125vw;
-		}
-		#input2 {
-			width: 16.40615vw;
-		}
-		#input3 {
-			width: 10.78125vw;
+.modal-content {
+	.form {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 30px;
+		padding: 60px 9.453125vw 70px;
+		&-box {
+			display: grid;
+			grid-gap: 12px;
 		}
 	}
+	.input {
+		height: 62px;
+		border: 1px solid var(--clr-orange);
+		font-size: 20px;
+	}
+	#input1 {
+		width: 35.78125vw;
+	}
+	#input2 {
+		width: 16.40615vw;
+	}
+	#input3 {
+		width: 10.78125vw;
+	}
+}
 </style>
