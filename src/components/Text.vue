@@ -1,6 +1,6 @@
 <template>
-	<div class='text'>
-		<h6>{{ text }}</h6>
+	<div class='item'>
+		<h4 class='item-text'>{{ text }}</h4>
 	</div>
 </template>
 
@@ -11,15 +11,17 @@ const prop = defineProps({
 </script>
 
 <style scoped lang='scss'>
-.text {
+.item {
 	width: 21.875vw;
 	height: 53px;
 	border-radius: 10px;
 	background-color: var(--clr-white);
 	padding: 18px 1.5625vw;
-	h6 {
-		font-size: 15px;
-		font-weight: 500;
+	white-space: nowrap;
+	&-text {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 100%;
 	}
 }
 </style>

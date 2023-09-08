@@ -130,9 +130,6 @@ const edit = ref(false);
 			background-color: var(--clr-white);
 			color: var(--clr-black);
 		}
-		h5 {
-			font-size: 15px !important;
-		}
 	}
 	&-buttons {
 		display: flex;

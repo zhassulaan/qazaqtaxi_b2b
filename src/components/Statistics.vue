@@ -14,8 +14,8 @@
 </template>
 
 <script setup>
-import Filter from '@/components/Filter.vue';
 import Counter from '@/components/Counter.vue';
+import Filter from '@/components/Filter.vue';
 
 const props = defineProps({
 	filter: {

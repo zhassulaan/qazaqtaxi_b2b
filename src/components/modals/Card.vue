@@ -39,7 +39,10 @@
 				</div>
 			</div>
 
-			<Button text='Пополнить в указанную сумму' @click="emit('close')" />
+			<Button
+				text='Пополнить в указанную сумму'
+				@click="emit('close')"
+			/>
 		</div>
 	</div>
 </template>

@@ -4,7 +4,8 @@
 			v-for='tariff in tariffs'
 			:key='tariff.id'
 		>
-			<input class='select-option__radio' type='radio' />
+			<input
+				class='select-option__radio' type='radio' />
 			<h4 class='select-option__text'>{{ tariff.name }}</h4>
 		</div>
 	</div>

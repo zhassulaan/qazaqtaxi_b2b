@@ -15,14 +15,18 @@
 			
 			<div class='modal-content__prices'>
 				<Price
-					:class="{ 'active': idx === active }"
-					:price='item'
 					v-for='(item, idx) in prices'
 					:key='idx'
+					:class="{ 'active': idx === active }"
+					:price='item'
 					@click='selectPrice(idx)'
 				/>
 			</div>
-			<Button text='Пополнить в указанную сумму' @click='openCardModal()' />
+
+			<Button
+				text='Пополнить в указанную сумму'
+				@click='openCardModal()'
+			/>
 		</div>
 	</div>
 </template>

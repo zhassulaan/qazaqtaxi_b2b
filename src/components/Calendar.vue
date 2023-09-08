@@ -10,17 +10,20 @@
 
 		<div class='calendar-body'>
 			<ul class='calendar-body__weeks'>
-				<li v-for='(week, idx) in weeks' :key='idx'>
-					<p>{{ week.name }}</p>
+				<li class='item'
+					v-for='(week, idx) in weeks'
+					:key='idx'
+				>
+					<p class='item-text'>{{ week.name }}</p>
 				</li>
 			</ul>
 			<ul class='calendar-body__days'>
-				<li class='btn'
+				<li class='item btn'
 					v-for='(day, idx) in days'
 					:key='idx'
 					@click='selectDay(day)'
 				>
-					<p :class="[
+					<p class='item-text' :class="[
 						(day.id < 0 || day.id > 31) ?
 							'another'
 								:
@@ -186,10 +189,10 @@ function selectDay(new_day) {
 			justify-content: center;
 			list-style: none;
 			flex-wrap: wrap;
-			li {
+			.item {
 				width: calc(100% / 7);
 				text-align: center;
-				p {
+				&-text {
 					font-size: 12px;
 					padding-top: 1px;
 				}
@@ -197,14 +200,14 @@ function selectDay(new_day) {
 		}
 		&__weeks {
 			margin-bottom: 8px;
-			li p {
+			.item-text {
 				color: var(--clr-text-secondary);
 			}
 		}
 		&__days {
 			gap: 6px 0;
-			li {
-				p {
+			.item {
+				&-text {
 					color: var(--clr-text-primary);
 				}
 				.another {
